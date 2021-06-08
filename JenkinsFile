@@ -1,6 +1,13 @@
 pipeline {
   agent any
   stages {
+    stage('clean') {
+      steps {
+        echo 'clean sysfoo app'
+        sh 'mvn clean'
+      }
+    }
+
     stage('build') {
       steps {
         echo 'compiling sysfoo app'
