@@ -64,6 +64,9 @@ pipeline {
     }
 
     stage('Docker BnP') {
+      when {
+        branch 'master'
+      }
       agent any
       steps {
         script {
