@@ -1,7 +1,7 @@
 pipeline {
   agent none
   stages {
-statge('Deploy to Dev') {
+stage('Deploy to Dev') {
  when {
 	beforeAgent true
 branch 'master'
